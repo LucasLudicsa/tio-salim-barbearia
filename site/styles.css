@@ -448,7 +448,10 @@ a { color: inherit; text-decoration: none; }
   .topnav { justify-content: center; text-align: center; }
   .topnav__links { justify-content: center; }
   .services__grid { grid-template-columns: 1fr; }
-  .services__media, .services__text { order: initial; }
+  .services__grid > *:nth-child(1) { order: 2; }
+  .services__grid > *:nth-child(2) { order: 1; }
+  .services__grid > *:nth-child(3) { order: 3; }
+  .services__grid > *:nth-child(4) { order: 4; }
   .club__grid { grid-template-columns: 1fr; }
   .club__col { border-left: none; border-top: 1px solid rgba(217,199,166,.1); }
   .club__col:first-child { border-top: none; }
